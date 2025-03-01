@@ -1,6 +1,6 @@
 import os
 import string
-import numpy as np
+import random
 import time
 from datetime import datetime
 
@@ -22,6 +22,6 @@ def create_new_commit():
     os.system('git push origin main')
 
 
-while True:
+for i in range(10):
     create_new_commit()
     time.sleep(5*60)
