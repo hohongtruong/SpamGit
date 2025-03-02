@@ -4,6 +4,9 @@ import random
 import time
 from datetime import datetime
 
+os.chdir(r'C:\Users\admin\Downloads\Learn\Git\SpamGit')
+
+
 def create_new_commit(char = string.ascii_letters+string.digits):
     text = ''.join(random.choice(char) for _ in range(1000000))
     with open('spam.txt','w') as f:
